@@ -1,23 +1,26 @@
 {
-  "name": "Robot Benchmark",
-  "version": "1.0",
   "manifest_version": 3,
-  "host_permissions": [
-    "https://humanbenchmark.com/tests/number-memory"
-  ],
+  "name": "Peek URL Route Checker",
+  "version": "1.0",
+  "description": "Stay safe online by checking the destinations of URLs before accessing them. See the final route and a snapshot of the site.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["https://api.redirect-checker.net/*", "https://apiflash.com/*", "<all_urls>"],
   "action": {
-    "default_icon": {
-      "16": "Icons/off.png"
-    }
+    "default_popup": "popup.html",
+    "default_icon": "icons/16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://humanbenchmark.com/tests/number-memory"],
-      "js": ["robotbenchmarknumber.js"]
-    },
-    {
-      "matches": ["https://humanbenchmark.com/tests/reactiontime"],
-      "js": ["robotbenchmarkreaction.js"]
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "icons" : {
+    "16" : "icons/16.png",
+    "48" : "icons/48.png",
+    "128" : "icons/128.png"
+  }
 }

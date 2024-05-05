@@ -1,0 +1,171 @@
+h1, h2, p, a, ::placeholder  {
+    font-family: sans-serif;
+}
+
+h1, h2  {
+    color: white;
+}
+
+h2 {
+    margin: 0px;
+}
+
+p, ::placeholder, a {
+    color: #a0a0a0;
+    font-size: medium;
+}
+
+#credit {
+    margin-left: 16px;
+    font-size: x-small;
+}
+
+a {
+    padding: 1px 6px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: #ff5a00;
+    text-decoration: none;
+}
+
+header {
+    padding: 0px 16px;
+}
+
+body {
+    background-color: #121212;
+    width: 380px;
+    padding: 10px;
+}
+
+hr {
+    margin: 20px;
+}
+
+.urlSearch {
+    text-align: left;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#urlSearchBar {
+    vertical-align: top;
+    background-color: #303030;
+    color: white;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    width: 81%;
+    height: 28px;
+    border: none;
+    border-radius: 2px;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+#urlSearchButton {
+    text-align: right;
+    height: 30px;
+    cursor: pointer;
+    background-color: #ff5a00;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
+    color: white;
+}
+
+#urlSearchButton:hover {
+    background-color: #c94a04;
+}
+
+.destinationResult {
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 2px;
+    margin: 10px;
+    display: none;
+    color: white;
+}
+
+.snapshot {
+    width: 320px;
+    vertical-align: bottom;
+}
+
+.setting {
+    display: inline-block;
+    position: relative;
+    background-color: #303030;
+    border-radius: 2px;
+    padding: 0px 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.shadow {
+    box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.2), 0 2px 10px 0 rgba(255, 255, 255, 0.19);
+}
+
+#settingOne {
+    width: 72%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: small;
+}
+
+#settingTwo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #ff5a00;
+    position: center;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#toggle:checked + label {
+    background-color: #ff5a00;
+}
+
+#toggle:checked + label::before {
+    transform: translateX(20px);
+}

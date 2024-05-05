@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html>
+    <head>
+        <title>Link Destination Checker</title>
+        <link rel="stylesheet" type="text/css" href="popup.css">
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Peek URL Checker</h1>
+            <p>Stay safe online by checking the route of URLs before accessing them. See the final destination and a snapshot of the site.</p>
+        </header>
+        <hr>
+        <section class="main">
+            <section class="urlSearch">
+                <input type="text" class="shadow" id="urlSearchBar" placeholder="Enter URL">
+                <button class= "shadow" id="urlSearchButton">Search</button>
+            </section>
+            <div class="destinationResult shadow" id="destinationResult">
+            </div>
+        </section>
+        <hr>
+        <div class="setting shadow">
+            <p id="settingOne">Automatically check short links you click on (including bit.ly, tinyurl etc.) </p>
+            <input type="checkbox" id="toggle" />
+            <label for="toggle"></label>
+            <!-- <input id="settingOneToggle" type="checkbox"> -->
+        </div>
+        <hr>
+        <p id="credit">An extension by <span style="color:#ff5a00">Brent Cenci</span></p>
+    </body>
 </html>
