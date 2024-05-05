@@ -14,15 +14,10 @@
   
 <h2>🧐 Features</h2>
 
-Here're some of the project's best features:
+Here are some of the project's best features:
 
 *   Checks final URL destination of any input URL
 *   Gives you easy access to navigate to final URL destination
 *   Displays snapshot of target site within the popup
 *   Toggleable automatic checking of blacklisted sites when you click on a short link on a web page
 
-  
-  
-<h2>💻 Built with</h2>
-
-Technologies used in the project:
