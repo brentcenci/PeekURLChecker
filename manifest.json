@@ -1,0 +1,23 @@
+{
+  "name": "Robot Benchmark",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": [
+    "https://humanbenchmark.com/tests/number-memory"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "Icons/off.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://humanbenchmark.com/tests/number-memory"],
+      "js": ["robotbenchmarknumber.js"]
+    },
+    {
+      "matches": ["https://humanbenchmark.com/tests/reactiontime"],
+      "js": ["robotbenchmarkreaction.js"]
+    }
+  ]
+}
